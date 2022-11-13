@@ -1,0 +1,23 @@
+import random
+
+
+def get_random(my_list):
+    return random.choice(my_list)
+
+
+places = ["Sofia", "Plovdiv", "Varna", "Burgas"]
+Verbs = ["eats", "holds", "sees", "plays with", "brings"]
+Nouns = ["stones", "cake", "apple", "laptop", "bikes"]
+Adverbs = ["slowly", "diligently", "warmly", "sadly", "rapidly"]
+Details = ["near the river", "at home", "in the park"]
+name = "Peter", "Michell", "Jane", "Steve"
+print('Hello, this is your first random sentence:')
+while True:
+    random_name = get_random(name)
+    random_places = get_random(places)
+    random_Verbs = get_random(Verbs)
+    random_Nouns = get_random(Nouns)
+    random_Adverbs = get_random(Adverbs)
+    random_Details = get_random(Details)
+    print(f"{random_name} from {random_places} {random_Adverbs} {random_Verbs} {random_Nouns}  ")
+    input('Press [Enter] to generate a new one.')
